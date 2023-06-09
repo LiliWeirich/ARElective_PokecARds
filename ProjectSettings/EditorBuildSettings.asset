@@ -14,4 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/leanTouch.unity
     guid: 1c53563788d560845b38e0e31e7b29b3
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5547de2ac38ea49e896f2a71d0d5f7d8,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 781e1ce00ece149e6ae1033ff0215d8b,
+      type: 2}
