@@ -12,6 +12,7 @@ using TMPro;
 
 public class ConfirmationWindow : MonoBehaviour
 {
-    public Button yesButton;
-    public TextMeshProUGUI messageText;
+    public Button continueButton;
+    public TextMeshProUGUI messageTextTitel;
+    //public TextMeshProUGUI messageText;
 }
