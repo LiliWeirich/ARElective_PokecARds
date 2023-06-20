@@ -4,6 +4,7 @@
 // Script by:    Lili Weirich (769701)
 // Last changed: 20-06-23
 //================================================================
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,4 +17,9 @@ public class Item : ScriptableObject
     public string itemName;
     public int value;
     public Sprite icon;
+
+    internal static void Remove(Item item)
+    {
+        throw new NotImplementedException();
+    }
 }
