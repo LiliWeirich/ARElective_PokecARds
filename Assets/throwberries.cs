@@ -55,7 +55,7 @@ public class throwberries : MonoBehaviour
     void PickupBerry() // berry should follow the mouse
     {
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.nearClipPlane = 30f;
+        mousePos.z = Camera.main.nearClipPlane = 3f;
         newPosition = Camera.main.ScreenToWorldPoint(mousePos);
         Berry.transform.localPosition = Vector3.Lerp(Berry.transform.localPosition,newPosition,80f * Time.deltaTime);
     }
@@ -67,6 +67,38 @@ public class throwberries : MonoBehaviour
 
         if(thrown)
         return;
+
+        if(Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit _hit;
+
+                if(Physics.Raycast(ray, out _hit, 100f))
+                {
+                    if(_hit.transform == Berry.transform)
+                    {
+                        startTime = Time.time;
+                        startPos = Input.mousePosition;
+                        holding = true;
+                    }
+                }
+            } else if (Input.GetMouseButtonUp(0))
+            {
+                endTime = Time.time;
+                endPos = Input.mousePosition; 
+                swipeDistance = (endPos-startPos).magnitude;
+                swipeTime = endTime - startTime;
+                if(swipeTime<0.5f && swipeDistance > 30f)
+                {
+                    //thrown ball
+                    //CalSpeed();
+                    //CalAngle();
+                    rb.AddForce(new Vector3((angle.x * BerrySpeed), (angle.y*BerrySpeed),(angle.z*BerrySpeed)));
+                    rb.useGravity = true;
+                }
+            }
     }
+
+  
 
 }
