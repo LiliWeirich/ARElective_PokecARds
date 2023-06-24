@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/inventorySystem.unity
     guid: 7692c092df68041faa87913740a8dd1f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PokeCArds.unity
     guid: a0ae334f80d6e4ae2bd4823b7c1dc874
+  - enabled: 1
+    path: Assets/Scenes/kwaksModel.unity
+    guid: 3e33c53d67af4fe4c9984c1bc1f9e3ca
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5547de2ac38ea49e896f2a71d0d5f7d8,
       type: 2}
