@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestingScenes/throwObject.unity
     guid: 3f79ef478fd38da43873b5d24480d7af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestingScenes/leanTouch.unity
     guid: 1c53563788d560845b38e0e31e7b29b3
   - enabled: 0
@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestingScenes/kwaksModel.unity
     guid: 3e33c53d67af4fe4c9984c1bc1f9e3ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestingScenes/animationInteraction.unity
     guid: 329ac4e6dfc174b3c832a8ba79c773be
   m_configObjects:

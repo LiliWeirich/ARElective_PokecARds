@@ -31,17 +31,27 @@ namespace Lean.Touch
 
 		[SerializeField]
 		private Vector3 remainingTranslation;
+		//------------------------added by Lili--------------------//
+		//public ObjectManipulator objectManipulator;
 
 		/// <summary>If you've set Use to ManuallyAddedFingers, then you can call this method to manually add a finger.</summary>
 		public void AddFinger(LeanFinger finger)
 		{
 			Use.AddFinger(finger);
+			/*//------------------------added by Lili--------------------//
+			if (objectManipulator.selectedObject != gameObject)
+				return;
+			*/
 		}
 
 		/// <summary>If you've set Use to ManuallyAddedFingers, then you can call this method to manually remove a finger.</summary>
 		public void RemoveFinger(LeanFinger finger)
 		{
 			Use.RemoveFinger(finger);
+			//------------------------added by Lili--------------------//
+			/*if (objectManipulator.selectedObject != gameObject)
+				return;
+			*/
 		}
 
 		/// <summary>If you've set Use to ManuallyAddedFingers, then you can call this method to manually remove all fingers.</summary>
