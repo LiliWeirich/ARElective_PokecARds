@@ -1375,7 +1375,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ce9a18b8445ea594fab36140f34ae65b,
         type: 3}
       propertyPath: m_Name
-      value: kwaksAnimation
+      value: kwaks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1408,6 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596dd15be15b74ae5b1bb9ec6a2bcf25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kwaksAnimator: {fileID: 0}
   kwaksModel: {fileID: 1255736415}
 --- !u!95 &1332677434
 Animator:

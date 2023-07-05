@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class kwaksAnimation : MonoBehaviour
 {
-    /*private Animator kwaksAnimator;
+    public Animator kwaksAnimator;
+    public GameObject kwaksModel;
+
     // Start is called before the first frame update
     void Start()
     {
-        kwaksAnimator = GetComponent<Animator>();
+        //kwaksAnimator = GetComponent<Animator>();
+        kwaksModel.GetComponent<Animator>().Play("Armature|Idle");
     }
 
+   
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -18,16 +23,15 @@ public class kwaksAnimation : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.O))
             {
-                kwaksAnimation.SetTrigger("trHappy");
+                kwaksAnimator.SetTrigger("trHappy");
             }
         }
     }
-    */
-
-    public GameObject kwaksModel; 
+   */
 
     public void OnButtonClick()
     {
        kwaksModel.GetComponent<Animator>().Play("Armature|Happy");
     }
+    
 }
