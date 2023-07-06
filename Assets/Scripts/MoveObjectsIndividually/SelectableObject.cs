@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SelectableObject : MonoBehaviour
 {
-    private bool isSelected = false;
+    /*private bool isSelected = false;
     private Vector3 touchOffset;
 
     void Update()
@@ -41,4 +41,5 @@ public class SelectableObject : MonoBehaviour
             touchOffset = new Vector3(Input.mousePosition.x, Input.mousePosition.y, touchPosition.z) - touchPosition;
         }
     }
+    */
 }

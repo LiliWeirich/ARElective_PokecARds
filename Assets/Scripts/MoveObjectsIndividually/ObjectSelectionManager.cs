@@ -6,7 +6,7 @@ public class ObjectSelectionManager : MonoBehaviour
 {
     void Update()
     {
-        if (Input.touchCount > 0)
+        /*if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
 
@@ -35,6 +35,7 @@ public class ObjectSelectionManager : MonoBehaviour
                     obj.SetSelected(false);
                 }
             }
-        }
+        }*/
     }
+
 }
