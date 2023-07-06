@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestingScenes/throwObject.unity
     guid: 3f79ef478fd38da43873b5d24480d7af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestingScenes/leanTouch.unity
     guid: 1c53563788d560845b38e0e31e7b29b3
   - enabled: 0
@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestingScenes/animationInteraction.unity
     guid: 329ac4e6dfc174b3c832a8ba79c773be
+  - enabled: 1
+    path: Assets/Scenes/TestingScenes/movingObjects.unity
+    guid: d2074b9bd22014cb998a8fa0e5d6c84a
   m_configObjects:
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5547de2ac38ea49e896f2a71d0d5f7d8,
       type: 2}
